@@ -1,0 +1,29 @@
+{
+  "name": "bigquery-edge",
+  "version": "1.0.0",
+  "description": "bigquery on fleek",
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js && echo 'export const main = __webpack_exports__.main;' >> dist/bundle.js"
+  },
+  "author": "Kanishk Khurana",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@fleek-platform/functions-esbuild-config": "^0.0.8",
+    "@google-cloud/bigquery": "^7.9.1",
+    "assert": "^2.1.0",
+    "crypto-browserify": "^3.12.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "querystring-es3": "^0.2.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.4",
+    "vm-browserify": "^1.1.2"
+  }
+}
